@@ -264,14 +264,34 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
 
 .checkout-title{font-family:"Fraunces",serif;font-size:30px;line-height:1.08;color:var(--deep);margin:15px 0 10px}
 .checkout-copy{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 20px}
+
+/* Official Pai Presente cover + logo */
+.brand-official{display:flex;align-items:center;min-width:0}
+.brand-logo-official{display:block;width:auto;height:58px;max-width:330px;object-fit:contain}
+.book-scene-official{min-height:565px}
+.hero-book-official{display:block;width:min(430px,88%);height:auto;border-radius:18px;box-shadow:0 30px 52px rgba(30,45,40,.22);transform:rotate(-4deg);position:relative;z-index:1}
+.book-scene-official .floating-card{z-index:3}
+.footer-brand-official{justify-content:flex-start}
+.footer-logo-official{display:block;height:48px;width:auto;max-width:290px;object-fit:contain;border-radius:6px}
+@media(max-width:960px){
+  .brand-logo-official{height:52px;max-width:300px}
+  .book-scene-official{min-height:500px}
+  .hero-book-official{width:min(370px,86%);transform:rotate(-3deg)}
+}
+@media(max-width:620px){
+  .brand-logo-official{height:46px;max-width:250px}
+  .book-scene-official{min-height:425px}
+  .hero-book-official{width:min(305px,84%);transform:rotate(-2deg)}
+  .footer-logo-official{height:42px;max-width:250px}
+}
+
 </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#inicio" aria-label="Pai Presente">
-        <span class="brand-mark">PP</span>
-        <span class="brand-copy"><strong>Pai Presente</strong><small>por Campos & Campos</small></span>
+      <a class="brand brand-official" href="#inicio" aria-label="Pai Presente">
+        <img class="brand-logo-official" src="assets/pai-presente-logo-oficial.png?v=1" alt="Pai Presente — Campos & Campos">
       </a>
       <nav aria-label="Navegação principal">
         <a href="#o-guia">O guia</a>
@@ -302,20 +322,9 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
           <p class="micro">Material digital • Acesso imediato após a compra • Conteúdo educativo</p>
         </div>
 
-        <div class="hero-visual" aria-label="Representação do guia Pai Presente">
-          <div class="book-scene">
-            <div class="book-shadow"></div>
-            <div class="book">
-              <div class="book-spine"></div>
-              <div class="book-cover">
-                <span class="cover-kicker">CAMPOS & CAMPOS</span>
-                <div class="cover-icon"><span></span><span></span></div>
-                <h2>PAI<br>PRESENTE</h2>
-                <p>Desenvolvimento Infantil<br>dos 12 aos 24 meses</p>
-                <div class="cover-line"></div>
-                <small>Um guia prático para acompanhar fases com presença, clareza e afeto.</small>
-              </div>
-            </div>
+        <div class="hero-visual" aria-label="Capa oficial do guia Pai Presente">
+          <div class="book-scene book-scene-official">
+            <img class="hero-book-official" src="assets/pai-presente-capa-oficial.png?v=1" alt="Capa oficial do livro Pai Presente — Desenvolvimento Infantil dos 12 aos 24 meses">
             <div class="floating-card card-one"><b>12 → 24</b><span>meses</span></div>
             <div class="floating-card card-two"><b>5 • 10 • 20</b><span>minutos que contam</span></div>
           </div>
@@ -551,9 +560,8 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
 
   <footer>
     <div class="wrap footer-grid">
-      <div class="brand footer-brand">
-        <span class="brand-mark">PP</span>
-        <span class="brand-copy"><strong>Pai Presente</strong><small>por Campos & Campos</small></span>
+      <div class="brand footer-brand footer-brand-official">
+        <img class="footer-logo-official" src="assets/pai-presente-logo-oficial.png?v=1" alt="Pai Presente — Campos & Campos">
       </div>
       <p>Conteúdo educativo sobre desenvolvimento infantil. Não substitui avaliação, diagnóstico ou acompanhamento profissional.</p>
       <small>© 2026 Campos & Campos. Todos os direitos reservados.</small>
@@ -561,6 +569,7 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
   </footer>
 
   <script src="script.js?v=4"></script>
-<!-- PAI-PRESENTE-PAGE-V4-NO-PRICE -->
+
+<!-- PAI-PRESENTE-PAGE-V5-OFFICIAL-COVER-LOGO -->
 </body>
 </html>
