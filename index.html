@@ -285,6 +285,17 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
   .footer-logo-official{height:44px;max-width:250px}
 }
 
+
+.purchase-trust{padding:88px 0;background:#f7f1e8}
+.purchase-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.purchase-steps article{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 10px 24px rgba(39,48,43,.05)}
+.purchase-steps article>span{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#f5e3da;color:var(--rust);font-size:11px;font-weight:800}
+.purchase-steps h3{font-family:"Fraunces",serif;font-size:23px;color:var(--deep);margin:18px 0 8px}
+.purchase-steps p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}
+.trust-list{display:grid;gap:8px;text-align:left;margin:0 0 20px;padding:16px;border:1px solid #e8ded1;border-radius:14px;background:#fffaf3}
+.trust-list span{font-size:12px;font-weight:700;color:#405854}
+@media(max-width:760px){.purchase-steps{grid-template-columns:1fr}.purchase-trust{padding:68px 0}}
+
 </style>
 
   <!-- Meta Pixel -->
@@ -330,10 +341,10 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
             <span>✓ Presença possível, mesmo com pouco tempo</span>
           </div>
           <div class="hero-actions">
-            <a class="btn checkout-link" href="#oferta">Quero conhecer o Pai Presente →</a>
+            <a class="btn checkout-link" href="#oferta">Ver o que recebo e como comprar →</a>
             <a class="text-link" href="#por-dentro">Ver o que tem dentro ↓</a>
           </div>
-          <p class="micro">Material digital • Acesso imediato após a compra • Conteúdo educativo</p>
+          <p class="micro">Material digital • Compra processada pela Hotmart • Acesso após confirmação do pagamento • Suporte via WhatsApp</p>
         </div>
 
         <div class="hero-visual" aria-label="Capa oficial do guia Pai Presente">
@@ -476,35 +487,12 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
     </section>
 
     
-<section class="creative-showcase" id="criativos">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">PAI PRESENTE NA PRÁTICA</div>
-      <h2>Presença, vínculo e desenvolvimento na rotina real.</h2>
-      <p>Veja alguns dos pilares que orientam o Pai Presente e descubra como pequenos momentos podem se transformar em participação de verdade.</p>
-    </div>
-    <div class="creative-gallery">
-      <a class="creative-card" href="#oferta" aria-label="Seu filho muda rápido">
-        <img loading="lazy" src="assets/criativos/pp-seu-filho-muda-rapido-v2.webp?v=2" alt="Pai Presente: Seu filho muda rápido. Você não precisa adivinhar como acompanhar.">
-      </a>
-      <a class="creative-card" href="#oferta" aria-label="Brincadeiras simples, conexão de verdade">
-        <img loading="lazy" src="assets/criativos/pp-brincadeiras-simples-v2.webp?v=2" alt="Pai Presente: Brincadeiras simples. Conexão de verdade.">
-      </a>
-      <a class="creative-card" href="#oferta" aria-label="Pequenos momentos, memórias para a vida toda">
-        <img loading="lazy" src="assets/criativos/pp-pequenos-momentos-v2.webp?v=2" alt="Pai Presente: Pequenos momentos. Memórias para a vida toda.">
-      </a>
-      <a class="creative-card" href="#oferta" aria-label="Autonomia começa no dia a dia">
-        <img loading="lazy" src="assets/criativos/pp-autonomia-dia-a-dia-v2.webp?v=2" alt="Pai Presente: Autonomia começa no dia a dia.">
-      </a>
-    </div>
-  </div>
-</section>
 <section class="offer" id="oferta">
       <div class="wrap offer-box">
         <div class="offer-copy">
           <div class="eyebrow light">PAI PRESENTE • ACESSO DIGITAL</div>
           <h2>Mais clareza para acompanhar.<br><em>Mais intenção para participar.</em></h2>
-          <p>Tenha o guia completo de desenvolvimento infantil dos 12 aos 24 meses para consultar no celular, tablet ou computador.</p>
+          <p>Receba o guia digital completo sobre desenvolvimento infantil dos 12 aos 24 meses, pensado para consulta prática no celular, tablet ou computador. Antes de concluir, você revisa todos os dados da compra no checkout oficial da Hotmart.</p>
           <div class="offer-list">
             <span>✓ Guia completo 12 a 24 meses</span>
             <span>✓ Desenvolvimento explicado por fases</span>
@@ -513,11 +501,45 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
           </div>
         </div>
         <div class="price-card">
-          <span class="price-label">ACESSO AO GUIA</span>
-          <h3 class="checkout-title">Acesso digital ao Pai Presente</h3>
-          <p class="checkout-copy">Você será direcionado ao checkout oficial da Hotmart para revisar a oferta, os dados da compra e as condições disponíveis antes de concluir o pagamento.</p>
-          <a class="btn btn-full buy-now" href="https://pay.hotmart.com/C107433582K?checkoutMode=10&amp;bid=1791394660514" target="_blank" rel="noopener">Quero o Pai Presente →</a>
-          <small class="price-note">Pagamento e entrega processados pela Hotmart.</small>
+          <span class="price-label">COMPRA SEGURA</span>
+          <h3 class="checkout-title">Pai Presente — acesso digital</h3>
+          <p class="checkout-copy">Ao clicar abaixo, você vai para o checkout oficial da Hotmart. Lá aparecem o valor atual, as formas de pagamento e os dados da compra antes de qualquer confirmação.</p>
+          <div class="trust-list" aria-label="Informações de confiança da compra">
+            <span>✓ Checkout oficial Hotmart</span>
+            <span>✓ Produto 100% digital</span>
+            <span>✓ Acesso vinculado ao e-mail da compra</span>
+            <span>✓ Suporte disponível via WhatsApp</span>
+          </div>
+          <a class="btn btn-full buy-now" href="https://pay.hotmart.com/C107433582K?checkoutMode=10&amp;bid=1791394660514" target="_blank" rel="noopener">Ir para o checkout seguro →</a>
+          <small class="price-note">Esta página não coleta seus dados de pagamento. O pagamento é processado pela Hotmart.</small>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="purchase-trust" aria-label="Como funciona a compra">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">COMPRA CLARA, SEM SURPRESAS</div>
+          <h2>Você sabe o que acontece em cada etapa.</h2>
+          <p>O Pai Presente é um produto digital. Esta página explica o conteúdo; a parte financeira acontece no ambiente da Hotmart.</p>
+        </div>
+        <div class="purchase-steps">
+          <article>
+            <span>01</span>
+            <h3>Revise no checkout</h3>
+            <p>Confira o valor atual, as formas de pagamento e seus dados antes de concluir.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Pagamento pela Hotmart</h3>
+            <p>O processamento do pagamento é feito no checkout oficial da plataforma.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Receba o acesso</h3>
+            <p>Depois da confirmação do pagamento, as orientações de acesso ficam vinculadas ao e-mail usado na compra.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -550,6 +572,14 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
             <p>Não. O conteúdo é educativo e não oferece diagnóstico. Dúvidas sobre saúde ou desenvolvimento devem ser discutidas com profissionais habilitados.</p>
           </details>
           <details>
+            <summary>A compra é feita nesta página?</summary>
+            <p>Não. Esta página apresenta o Pai Presente e direciona você ao checkout oficial da Hotmart. Os dados de pagamento são informados e processados no ambiente da Hotmart.</p>
+          </details>
+          <details>
+            <summary>Se eu tiver dúvida sobre o acesso, existe suporte?</summary>
+            <p>Sim. Você pode usar o botão de suporte pelo WhatsApp disponível nesta página para tirar dúvidas relacionadas ao acesso ao produto.</p>
+          </details>
+          <details>
             <summary>Como recebo o material?</summary>
             <p>O produto é digital. Após a confirmação do pagamento, a Hotmart apresenta as orientações de acesso ao conteúdo comprado e envia as informações vinculadas ao e-mail utilizado na compra.</p>
           </details>
@@ -562,7 +592,7 @@ footer{background:var(--deep-2);color:#fff;padding:38px 0}
         <span>PAI PRESENTE</span>
         <h2>Você não precisa saber tudo.<br>Mas pode escolher estar mais perto.</h2>
         <p>Entenda melhor a fase, encontre ideias possíveis e transforme pequenos momentos em presença de verdade.</p>
-        <a class="btn buy-now" href="https://pay.hotmart.com/C107433582K?checkoutMode=10&amp;bid=1791394660514" target="_blank" rel="noopener">Quero conhecer o guia →</a>
+        <a class="btn buy-now" href="https://pay.hotmart.com/C107433582K?checkoutMode=10&amp;bid=1791394660514" target="_blank" rel="noopener">Ir para o checkout oficial →</a>
       </div>
     </section>
   </main>
