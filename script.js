@@ -11,6 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>{
 const campaignKeys=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];
 const currentParams=new URLSearchParams(window.location.search);
 const campaign={};
+
 campaignKeys.forEach(key=>{
   const value=currentParams.get(key);
   if(value) campaign[key]=value;
@@ -21,10 +22,26 @@ if(Object.keys(campaign).length){
 }
 
 document.querySelectorAll('.buy-now').forEach(link=>{
+  try{
+    const checkoutUrl=new URL(link.href);
+    campaignKeys.forEach(key=>{
+      const value=currentParams.get(key);
+      if(value) checkoutUrl.searchParams.set(key,value);
+    });
+    link.href=checkoutUrl.toString();
+  }catch(e){}
+
   link.addEventListener('click',()=>{
     try{
       sessionStorage.setItem('pai_presente_buy_click',new Date().toISOString());
     }catch(e){}
+
+    if(typeof fbq==='function'){
+      fbq('track','InitiateCheckout',{
+        content_name:'Pai Presente',
+        content_category:'Desenvolvimento Infantil'
+      });
+    }
   });
 });
 
